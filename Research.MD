@@ -78,3 +78,8 @@ These amend earlier entries; prior entries left intact per append-only rule.
 - [2026-11-12] [T12] Testers are real people: facial-geometry biometrics + ID images + room-scan captured → written revocable consent + BIPA duties + deletion plan required | src: slices/T12 §5; T05 §10 | status: requirement
 - [2026-11-12] [T12] Tiering: Tier-1 lower-exposure host-side tests (overlay/local-LLM/pre-stage/a11y/OCR/FUS/macOS/display/injection) vs Tier-2 extra-sign-off (VM #7/#8, virtual-display #10, negative controls) | src: slices/T12 §7 | status: design
 - [2026-11-12] [T12] Deliverables: 5-role approval chain, Rules of Engagement (scope IN/OUT + stop conditions), 10-item Go/No-Go checklist, sign-off record template | src: slices/T12 | status: design
+
+## Corrections (user fact, 2026-11-12)
+- [2026-11-12] [T12] AMENDS branch resolution: user is a CURRENT OnVUE sponsor/customer evaluating alternatives (not a prospect) → Branch A (contracted sponsor) is operative, NOT Branch B | src: user 2026-11-12 | status: correction
+- [2026-11-12] [T12] Branch A implication: user HAS Pearson's sponsor channel (Secure Testing Framework / "Partner with our team") to request a SANCTIONED test sandbox + coordinate Tier-2 tests — not limited to own-stack-only Branch B constraints | src: slices/T12 [3][4] | status: recommendation
+- [2026-11-12] [T12] Still true under Branch A: no self-serve pentest/reverse-engineering authorization exists; Tier-2 (VM/client-tamper) tests should be run WITH Pearson coordination, not against live production unilaterally | src: slices/T12 [1] | status: guardrail

@@ -18,7 +18,9 @@ User-defined. Agents edit only with user approval.
   countermeasures. Not a turnkey operational cheating playbook.
 
 ## Deployment Clarification (user-supplied 2026-11-12 — refines the model above)
-- User is **evaluating** OnVUE (not yet a contracted sponsor).
+- User is a **current OnVUE sponsor/customer** (has used it in production) now in an
+  **evaluation phase for alternative solutions**. (Corrected 2026-11-12; earlier
+  "evaluating, not yet a sponsor" was a misstatement.) → Authorization = Branch A.
 - Real environment = **test CENTER with center-OWNED machines**, NOT home BYOD.
   - Center machines are **low compute** (likely cannot run a full local LLM).
   - Endpoints currently **poorly locked down** ("not guarded very well") — but the
