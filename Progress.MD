@@ -11,13 +11,16 @@ See Goals.MD
 - [x] T07 Vendor alternatives control inventory | check: slices/T07/output.md, sourced | evidence: 195 lines, 51 sources, 13 vendors, merged to Research.MD
 - [x] T08 Persona B synthesis (rules+procedures+vendor) | check: slices/T08/output.md | evidence: 154 lines, 6 sections, 11 rules + vendor pick + roadmap, merged to Research.MD
 - [x] T09 G3 bypass-test designs for top strategies | check: slices/T09/output.md | evidence: 14 tests (12 treatment+2 control), design-only, merged to Research.MD
-- [ ] T10 Final verification vs done-conditions (Persona A+B answerable) | check: reviewer PASS | agent: running
+- [x] T10 Final verification vs done-conditions | check: reviewer PASS | evidence: PASS-WITH-GAPS; G1-G3 + Persona A/B all PASS; 3 sourcing gaps flagged
+- [ ] T11 Re-verify load-bearing vendor claims (Guardian continuous-scan, Rosalyn/Constructor, Simko) | check: slices/T11/output.md | agent: running
 
 # Findings
 - Research findings live in Research.MD, not here.
 - T05 pivot: proctor never sees screen → only OnVUE client-side checks guard the second workspace. This is the central G1 result.
 
 # Decisions
+- T10 reviewer: PASS-WITH-GAPS. Fixing the 1 load-bearing correctness gap (Guardian continuous-scan) via T11 before final done | why: user rule = fix correctness gaps before done
+
 - Subagents write only to own slice; orchestrator merges into Research.MD | why: avoid parallel write conflicts
 - Bypass tests: design only; execution needs user approval | why: user asked to design; no assumed intent
 - Done-conditions left TBD | why: not stated by user
