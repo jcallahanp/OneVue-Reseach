@@ -42,6 +42,14 @@ Entry format:
 - [2026-11-12] [T07] RESIDUAL GAP (b): capture-excluded AI overlays (WDA_EXCLUDEFROMCAPTURE / macOS window-privacy) reachable only via OS process/overlay/GPU/network signals; strongest vendors reduce but do not eliminate | src: slices/T07 [S32] | status: verified
 - [2026-11-12] [T07] OnVUE baseline = native secure browser (mid-tier) but the user's deployment disables continuous screen/host monitoring — forfeits the one layer that catches a workspace opened AFTER launch | src: slices/T07 [S33][S34] + Goals.MD | status: analysis
 
+### T08 Persona B defense synthesis (full: slices/T08-persona-b-synthesis/output.md)
+- [2026-11-12] [T08] Persona B single biggest change (in-constraint): convert OnVUE's launch-only checks to continuous all-session native host-agent enumeration — catches pre-staged helper + local LLM without watching the screen | src: slices/T08 §1 | status: recommendation
+- [2026-11-12] [T08] Unconstrained best lever: reinstate continuous screen capture (OnVUE-capable but OFF in this deployment) PAIRED with native overlay/process-enum agent (capture alone misses WDA_EXCLUDEFROMCAPTURE overlays) | src: slices/T08 §1; T07 [S35][S32] | status: recommendation
+- [2026-11-12] [T08] Rule set = 11 rules (R1-R11), each mapped to T06 family + T05 control, tagged [OnVUE-now]/[OnVUE-capable-OFF]/[vendor]/[tooling] | src: slices/T08 §2 | status: design
+- [2026-11-12] [T08] Vendor pick: ProctorU/Meazure Guardian (primary) + Rosalyn/StableSight + Constructor/Examus; exclude extension-only (structurally blind) | src: slices/T08 §4; T07 | status: recommendation
+- [2026-11-12] [T08] Candid gap: NO vendor closes bare-metal Type-1 hypervisor or capture-excluded overlay without native overlay/process enum; residual needs [CONSTRAINT CHANGE] screen capture, TPM/measured-boot attestation + timing probe, or in-person for top-stakes | src: slices/T08 §4-5 | status: recommendation
+- [2026-11-12] [T08] Roadmap: Band1 native-agent vendor + overlay/display enum + witnessed reboot; Band2 screen capture + a11y-attach/IME-lock/host-load; Band3 (top tier) hardware attestation + timing probe + in-person backstop | src: slices/T08 §6 | status: design
+
 ## G3 Bypass test design
 ### T09 Owner-run detection test designs (full: slices/T09-bypass-tests/output.md) — DESIGN ONLY, not run
 - [2026-11-12] [T09] 14 tests: 12 treatments (T06 High/Med items) + 2 negative controls (casual VM, loopback RDP, predicted caught) | src: slices/T09 | status: design

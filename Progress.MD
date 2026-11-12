@@ -8,10 +8,10 @@ See Goals.MD
 - [x] T04 User defines done-conditions G1–G3 | check: no "TBD" | evidence: done-whens + Persona A/B set
 - [x] T05 OnVUE control surface (grounding) | check: slices/T05/output.md, sourced | evidence: 129 lines, 16 sources, merged to Research.MD
 - [x] T06 Persona A red-team inventory (first slice) | check: slices/T06/output.md | evidence: 160 lines, 20 techniques ranked, 18 web srcs + T05, merged to Research.MD
-- [ ] T08 running
 - [x] T07 Vendor alternatives control inventory | check: slices/T07/output.md, sourced | evidence: 195 lines, 51 sources, 13 vendors, merged to Research.MD
-- [ ] T08 Persona B synthesis (rules+procedures+vendor) | check: slices/T08/output.md | needs: T06,T07
+- [x] T08 Persona B synthesis (rules+procedures+vendor) | check: slices/T08/output.md | evidence: 154 lines, 6 sections, 11 rules + vendor pick + roadmap, merged to Research.MD
 - [x] T09 G3 bypass-test designs for top strategies | check: slices/T09/output.md | evidence: 14 tests (12 treatment+2 control), design-only, merged to Research.MD
+- [ ] T10 Final verification vs done-conditions (Persona A+B answerable) | check: reviewer PASS | agent: running
 
 # Findings
 - Research findings live in Research.MD, not here.
