@@ -22,7 +22,8 @@ See Goals.MD
 - [x] T16 Hypervisor home-vs-center + OnVUE detection stages | check: slices/T16/output.md | evidence: stage timeline; "not just install"; home raises risk via loss of owner controls; merged (note: 1st attempt hit cyber-safeguard, relaunched defensive-only)
 - [x] T17 Copy-paste/clipboard detection on OnVUE | check: slices/T17/output.md | evidence: no OnVUE clipboard detection; guest-tools-vs-stealth tension is load-bearing; merged
 - [x] T18 Home guardrailing decision (home vs in-person assurance) | check: slices/T18/output.md | evidence: BLUF in-person for certainty; hybrid default; home = risk-reduction only; merged
-- [ ] T19 Verify T16/T17/T18 load-bearing claims | check: reviewer verdict | agent: running
+- [x] T19 Verify T16/T17/T18 load-bearing claims | check: reviewer verdict | evidence: PASS-WITH-GAPS; conclusions hold; 1 T17 sourcing fix logged
+- DONE (round 3): home-vs-center deepening (T16 stages, T17 copy-paste, T18 decision) complete + verified. Decision: in-person on locked machines for high-stakes; home = risk-reduction only.
 
 # Findings
 - Research findings live in Research.MD, not here.
