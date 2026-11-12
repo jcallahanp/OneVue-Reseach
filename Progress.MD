@@ -19,9 +19,9 @@ See Goals.MD
 - [x] T14 Deepen Type-1 hypervisor: tools, feasibility, prevention | check: slices/T14/output.md | evidence: verdict "1h install" overstated; disable VT-x = decisive lever; 24 srcs; merged to Research.MD
 - [x] T15 Verify T13+T14 load-bearing claims | check: reviewer verdict | evidence: PASS-WITH-GAPS, no factual errors, 2 label tightenings applied to Research.MD
 - DONE (round 2): T12 authorization + T13/T14 deepenings complete and verified. Deployment = center-owned machines (Branch A sponsor).
-- [ ] T16 Hypervisor home-vs-center + OnVUE detection stages | check: slices/T16/output.md | agent: running
-- [ ] T17 Copy-paste/clipboard detection on OnVUE (incl. across Type-1 boundary) | check: slices/T17/output.md | agent: running
-- [ ] T18 Home guardrailing decision (home vs in-person assurance) | check: slices/T18/output.md | needs: T16,T17
+- [x] T16 Hypervisor home-vs-center + OnVUE detection stages | check: slices/T16/output.md | evidence: stage timeline; "not just install"; home raises risk via loss of owner controls; merged (note: 1st attempt hit cyber-safeguard, relaunched defensive-only)
+- [x] T17 Copy-paste/clipboard detection on OnVUE | check: slices/T17/output.md | evidence: no OnVUE clipboard detection; guest-tools-vs-stealth tension is load-bearing; merged
+- [ ] T18 Home guardrailing decision (home vs in-person assurance) | check: slices/T18/output.md | agent: running
 
 # Findings
 - Research findings live in Research.MD, not here.
