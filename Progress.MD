@@ -7,7 +7,8 @@ See Goals.MD
 - [x] T03 User supplies specific concerns | check: Goals.MD Concerns populated | evidence: C1-C3 + threat model set
 - [x] T04 User defines done-conditions G1–G3 | check: no "TBD" | evidence: done-whens + Persona A/B set
 - [x] T05 OnVUE control surface (grounding) | check: slices/T05/output.md, sourced | evidence: 129 lines, 16 sources, merged to Research.MD
-- [ ] T06 Persona A red-team inventory (first slice) | check: slices/T06/output.md | agent: running (needs T05 ✓)
+- [x] T06 Persona A red-team inventory (first slice) | check: slices/T06/output.md | evidence: 160 lines, 20 techniques ranked, 18 web srcs + T05, merged to Research.MD
+- [ ] T08 running; T09 running
 - [x] T07 Vendor alternatives control inventory | check: slices/T07/output.md, sourced | evidence: 195 lines, 51 sources, 13 vendors, merged to Research.MD
 - [ ] T08 Persona B synthesis (rules+procedures+vendor) | check: slices/T08/output.md | needs: T06,T07
 - [ ] T09 G3 bypass-test designs for top strategies | check: slices/T09/output.md | needs: T06
@@ -22,8 +23,6 @@ See Goals.MD
 - Done-conditions left TBD | why: not stated by user
 
 # Blockers
-- Specific concerns not provided | needs: user
-- Done-conditions for G1–G3 undefined | needs: user
-- Target product name ("OneVue" vs "OnVUE") not confirmed | needs: user
-- Which exam/platform is "my exam" | needs: user
-- Kind of alternatives to examine not specified | needs: user
+- (all prior blockers resolved by user's 2026-11-12 scope message)
+- OPEN: user's exact exam platform/sponsor + OS mix unknown | needs: user (affects T09 test realism; not blocking design)
+- NOTE: T06 subagent claimed it edited Progress.MD; it did not (lane held). No corruption.

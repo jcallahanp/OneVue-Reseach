@@ -21,6 +21,15 @@ Entry format:
 - [2026-11-12] [T05] Admin-rights requirement claimed by third party, absent from Pearson docs | src: help.opengroup.org | status: UNVERIFIED
 - [2026-11-12] [T05] No independent binary teardown of OnVUE client found; internals rest on vendor text + candidate reports | src: T05 §gaps | status: limitation-noted
 
+### T06 Persona A red-team inventory (full + 20-technique table: slices/T06-persona-a-redteam/output.md)
+- [2026-11-12] [T06] ANSWER (Persona A primary): no-VM local tooling — offline local LLM + indexed bank, accessibility/UIA or OCR read of exam, non-activating topmost overlay on PRIMARY display, staged into memory pre-launch | src: slices/T06 | status: analysis
+- [2026-11-12] [T06] Why it wins: sidesteps VM detection (OnVUE's only hard-BLOCK), no network, gaze stays on-screen, lives in 3 blind spots (screen unobserved, process-scan internals undocumented, focus-only lockdown) | src: slices/T06 §exec | status: analysis
+- [2026-11-12] [T06] Binding constraints a defender should target: (a) helper surviving the process scan, (b) overlay beating exclusive-fullscreen / client z-order | src: slices/T06 | status: analysis
+- [2026-11-12] [T06] Secondary (higher skill): stealthed Type-1 hypervisor + GPU passthrough, OnVUE as hardened guest; signature VM-tells beatable, TIMING red-pills remain the unsolved hard part | src: slices/T06 #7-8; BlackHat EU2020 D'Elia | status: analysis+research
+- [2026-11-12] [T06] CLOSED paths: casual VM/WSL/Hyper-V (over-blocked), audio/TTS delivery (always-on mic), loopback remote-desktop (category block), 2nd display/device (out of scope + flagged) | src: slices/T06 | status: analysis
+- [2026-11-12] [T06] Top defender signals: (1) timing-based hypervisor probe, (2) continuous all-session process + capture-API scan, (3) top-of-z-order overlay audit, (4) assistive-tech client-attach detection + host-load telemetry | src: slices/T06 §defender | status: analysis
+- [2026-11-12] [T06] Caveat: no OnVUE binary teardown exists; virtual-cam detection, process-scan method, VBS/HVCI handling, proctorapp fullscreen mode remain UNKNOWN and drive feasibility ratings | src: slices/T06; T05 §gaps | status: limitation
+
 ## G2 Alternatives
 ### T07 Vendor control inventory (full + 51 sources: slices/T07-vendor-alternatives/output.md)
 - [2026-11-12] [T07] Decisive factor = architecture: a lockdown-browser/extension structurally cannot see a VM, remote session, or capture-excluded overlay; only a native host agent with continuous process+overlay+display enumeration closes the gap | src: slices/T07 [S29][S32] | status: analysis

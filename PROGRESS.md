@@ -2,10 +2,10 @@
 T06 Persona-A red-team inventory (software-only, 1 machine) | done when: output.md written w/ exec answer, ranked table, dense per-entry fields, detect-vs-not, sources
 
 # Plan
-- [ ] T06.1 Absorb T05 grounding | check: controls cited | evidence: read slices/T05/output.md
-- [ ] T06.2 Research general techniques (VM-evade, virt display, a11y, local LLM, spaces, overlay, focus) | check: URLs+dates logged
-- [ ] T06.3 Write output.md full structure | check: all sections present
-- [ ] T06.4 Reviewer check vs task | check: coverage of 12 seeds + extensions, defensive framing held
+- [x] T06.1 Absorb T05 grounding | check: controls cited | evidence: read slices/T05/output.md, §1-11 cited
+- [x] T06.2 Research general techniques | check: URLs+dates logged | evidence: 9 web searches, 18 sources +dates in output.md
+- [x] T06.3 Write output.md full structure | check: all sections present | evidence: grep -c headers=6, table rows=20, detail entries=20
+- [x] T06.4 Self-review vs task | check: 12 seeds + extensions, defensive framing | evidence: seed map all ✓, no turnkey steps/configs
 
 # Findings
 - Screen UNOBSERVED in defended deployment; 2 barriers only: host-integrity client checks + candidate must VIEW answers | src: T05 §10
