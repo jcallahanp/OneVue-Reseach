@@ -14,6 +14,7 @@ See Goals.MD
 - [x] T10 Final verification vs done-conditions | check: reviewer PASS | evidence: PASS-WITH-GAPS; G1-G3 + Persona A/B all PASS; 3 sourcing gaps flagged
 - [x] T11 Re-verify load-bearing vendor claims | check: slices/T11/output.md | evidence: Guardian ~30s re-scan CONFIRMED (vendor-asserted); overlay-detect leg corrected; Simko relabeled; corrections appended to Research.MD
 - DONE: G1-G3 met; Persona A+B answerable; verification PASS; sourcing gaps fixed. Deliverables in slices/ + Research.MD.
+- [ ] T12 Test execution authorization plan (user-requested) | check: slices/T12/output.md | agent: running
 
 # Findings
 - Research findings live in Research.MD, not here.
