@@ -17,6 +17,23 @@ User-defined. Agents edit only with user approval.
   Analytical level — technique categories, detection-gap rationale,
   countermeasures. Not a turnkey operational cheating playbook.
 
+## Deployment Clarification (user-supplied 2026-11-12 — refines the model above)
+- User is **evaluating** OnVUE (not yet a contracted sponsor).
+- Real environment = **test CENTER with center-OWNED machines**, NOT home BYOD.
+  - Center machines are **low compute** (likely cannot run a full local LLM).
+  - Endpoints currently **poorly locked down** ("not guarded very well") — but the
+    center OWNS them, so firmware/boot/endpoint hardening is available to the owner.
+  - **4-hour** on-site exam; **one proctor per many screens**, loose monitoring.
+  - Candidate cannot pre-stage their own primary machine; may bring removable media.
+- Implication: owner controls the endpoint → firmware/boot lockdown + USB + network
+  egress control become the dominant defenses (unlike the BYOD Persona B analysis).
+- User's two priority deepenings:
+  - D1 (→T13): Is methodology #1 (local tooling) feasible here given low compute +
+    4h + must-pre-engineer? Can they run the LLM via a VM, or is it detected?
+  - D2 (→T14): Type-1 bare-metal hypervisor — what open-source tools exist, could a
+    student install one within ~1h on a poorly-locked machine, is it resource-heavy,
+    would OnVUE detect it, and the best preventions?
+
 ## G1 OnVUE feasibility (core question)
 Thorough inventory, far beyond typical strategies, of ANY software-only method
 to run the exam + simultaneous answer research on one machine without OnVUE
