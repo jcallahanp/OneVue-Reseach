@@ -36,6 +36,21 @@ User-defined. Agents edit only with user approval.
     student install one within ~1h on a poorly-locked machine, is it resource-heavy,
     would OnVUE detect it, and the best preventions?
 
+## Home-vs-Center reconsideration (user-supplied 2026-11-12)
+- User is weighing ALLOWING AT-HOME testing: 360° pre-check + a LIVE room camera,
+  but NO screen monitoring (hard to enforce). vs. in-person on center-owned machines.
+- New depth required (research slice):
+  - D3 (→T16): Hypervisor — home vs center discrepancy + OnVUE DETECTION STAGES.
+    "Is it just the install I'd catch them at?" At what stage does OnVUE capture a
+    VM/hypervisor? Does home (BYOD, pre-install, no firmware lockdown, unlimited prep)
+    make the hypervisor a bigger threat, and could a prepared candidate stand it up
+    quickly ahead of time? Is it still secondary to methodology #1 at home?
+  - D4 (→T17): Copy-paste/clipboard — can OnVUE see/log/block copy-paste in-exam? If
+    the LLM is on the HOST and OnVUE runs in a Type-1 GUEST, can OnVUE capture clipboard
+    transfer across the VM boundary?
+  - D5 (→T18): Best approach to guardrailing HOME testing — or is in-person on locked
+    machines the only path to high assurance? Honest home-vs-in-person assurance call.
+
 ## G1 OnVUE feasibility (core question)
 Thorough inventory, far beyond typical strategies, of ANY software-only method
 to run the exam + simultaneous answer research on one machine without OnVUE
