@@ -17,7 +17,8 @@ See Goals.MD
 - [x] T12 Test execution authorization plan (user-requested) | check: slices/T12/output.md | evidence: 10 sections, no Pearson pentest path found, Branch A/B, tiering, merged to Research.MD
 - [x] T13 Deepen methodology #1 under center/low-compute/4h model | check: slices/T13/output.md | evidence: verdict HIGH→LOW w/ hardening; compute+4h hypothesis rejected; merged to Research.MD
 - [x] T14 Deepen Type-1 hypervisor: tools, feasibility, prevention | check: slices/T14/output.md | evidence: verdict "1h install" overstated; disable VT-x = decisive lever; 24 srcs; merged to Research.MD
-- [ ] T15 Verify T13+T14 load-bearing claims | check: reviewer verdict | agent: running
+- [x] T15 Verify T13+T14 load-bearing claims | check: reviewer verdict | evidence: PASS-WITH-GAPS, no factual errors, 2 label tightenings applied to Research.MD
+- DONE (round 2): T12 authorization + T13/T14 deepenings complete and verified. Deployment = center-owned machines (Branch A sponsor).
 
 # Findings
 - Research findings live in Research.MD, not here.
