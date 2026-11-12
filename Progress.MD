@@ -25,7 +25,7 @@ See Goals.MD
 - [x] T19 Verify T16/T17/T18 load-bearing claims | check: reviewer verdict | evidence: PASS-WITH-GAPS; conclusions hold; 1 T17 sourcing fix logged
 - DONE (round 3): home-vs-center deepening (T16 stages, T17 copy-paste, T18 decision) complete + verified. Decision: in-person on locked machines for high-stakes; home = risk-reduction only.
 - [ ] T20 OnVUE deep mechanism dossier (public-record; no binary RE) | check: slices/T20/output.md | agent: running
-- [ ] T21 Respondus (LockDown Browser + Monitor) mechanism dossier | check: slices/T21/output.md | agent: running
+- [x] T21 Respondus (LockDown Browser + Monitor) mechanism dossier | check: slices/T21/output.md | evidence: kernel-driver architecture, VM-detect table, patents, 48 srcs; stronger than OnVUE deployment; merged
 - [ ] T22 Other vendors (Proctorio/Guardian/Honorlock/+) mechanism dossiers | check: slices/T22/output.md | agent: running
 
 # Findings
