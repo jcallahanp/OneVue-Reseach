@@ -43,3 +43,8 @@ Entry format:
 - [2026-11-12] [T07] OnVUE baseline = native secure browser (mid-tier) but the user's deployment disables continuous screen/host monitoring — forfeits the one layer that catches a workspace opened AFTER launch | src: slices/T07 [S33][S34] + Goals.MD | status: analysis
 
 ## G3 Bypass test design
+### T09 Owner-run detection test designs (full: slices/T09-bypass-tests/output.md) — DESIGN ONLY, not run
+- [2026-11-12] [T09] 14 tests: 12 treatments (T06 High/Med items) + 2 negative controls (casual VM, loopback RDP, predicted caught) | src: slices/T09 | status: design
+- [2026-11-12] [T09] Each test: hypothesis, setup, control-vs-treatment method, detection signal tied to T05 behavior, explicit PASS(=detects)/FAIL(=evades), Win/macOS delta, ethics guardrails, labeled prediction | src: slices/T09 | status: design
+- [2026-11-12] [T09] Predictions: VM/display-adapter families → PASS(caught); overlay/local-LLM/pre-staging/a11y-read → FAIL(evade) — matching the T05 blind spots | src: slices/T09 | status: prediction (nothing run)
+- [2026-11-12] [T09] Execution requires user approval + practice/non-live exam + consenting testers + Pearson/sponsor coordination + ToS/legal review | src: slices/T09 | status: guardrail
