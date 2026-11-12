@@ -22,5 +22,15 @@ Entry format:
 - [2026-11-12] [T05] No independent binary teardown of OnVUE client found; internals rest on vendor text + candidate reports | src: T05 §gaps | status: limitation-noted
 
 ## G2 Alternatives
+### T07 Vendor control inventory (full + 51 sources: slices/T07-vendor-alternatives/output.md)
+- [2026-11-12] [T07] Decisive factor = architecture: a lockdown-browser/extension structurally cannot see a VM, remote session, or capture-excluded overlay; only a native host agent with continuous process+overlay+display enumeration closes the gap | src: slices/T07 [S29][S32] | status: analysis
+- [2026-11-12] [T07] Strongest native host-integrity: ProctorU/Meazure Guardian (logs all processes, re-checks ~30s, scans 400+ apps for VM/remote tools) | src: slices/T07 [S15][S16] | status: verified(vendor)
+- [2026-11-12] [T07] Rosalyn/StableSight: native app, deep process monitoring + typing-sound correlation + explicit screen-visual detection of another app | src: slices/T07 [S27][S28] | status: verified(vendor)
+- [2026-11-12] [T07] Constructor/Examus: secure browser with auto VM detection + explicit overlay blocking + active-window-change flag | src: slices/T07 [S23][S24] | status: verified(vendor)
+- [2026-11-12] [T07] Prometric ProProctor blocks VM + Administrator-role machine; Respondus/Kryterion block VMs incl virtual displays but have documented evasions | src: slices/T07 [S10][S11][S20][S31][S32] | status: verified+evasions-noted
+- [2026-11-12] [T07] Weakest for this threat: Proctorio (needs Companion App), Honorlock (extension), Examity (host integrity undocumented), ProctorExam (pixels-only) | src: slices/T07 | status: verified(vendor)
+- [2026-11-12] [T07] RESIDUAL GAP (a): NO vendor uses hardware attestation (TPM/Secure Boot/measured boot) or Type-1 bare-metal hypervisor detection; all VM detection is software heuristic, defeatable by tuned/bare-metal guest | src: slices/T07 [S46][S31] | status: verified(absence)
+- [2026-11-12] [T07] RESIDUAL GAP (b): capture-excluded AI overlays (WDA_EXCLUDEFROMCAPTURE / macOS window-privacy) reachable only via OS process/overlay/GPU/network signals; strongest vendors reduce but do not eliminate | src: slices/T07 [S32] | status: verified
+- [2026-11-12] [T07] OnVUE baseline = native secure browser (mid-tier) but the user's deployment disables continuous screen/host monitoring — forfeits the one layer that catches a workspace opened AFTER launch | src: slices/T07 [S33][S34] + Goals.MD | status: analysis
 
 ## G3 Bypass test design

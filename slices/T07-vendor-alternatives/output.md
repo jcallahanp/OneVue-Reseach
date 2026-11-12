@@ -56,7 +56,7 @@ Cross-cutting: **No vendor documents hardware attestation (TPM, Secure Boot, mea
 ### Constructor / Examus (NATIVE Secure Browser + AI)
 - Secure Browser "locks down the test environment, **blocks restricted apps and overlays**, and supports allow-listed resources" [S23].
 - "**Virtual machine detection: Automatic whenever the Secure Browser is used**" [S23]; AI flag list includes "**Virtualization is used** — The proctoring application is running inside a virtual machine" and "**Active window is changed** — switched to another tab or application" [S24].
-- Legacy Examus documentation: detects "the usage of **virtual machines and thin clients**," plus TeamViewer/Skype/RemoteAdmin "desktop broadcasting software" [S28-note / S49].
+- Legacy Examus documentation: detects "the usage of **virtual machines and thin clients**," plus TeamViewer/Skype/RemoteAdmin "desktop broadcasting software" [S49].
 - Relevance: explicit **overlay** blocking + active-window-change detection is rare and directly targets the concealed-workspace vector. Residual gap: VM detection heuristic; overlay block relies on the secure browser being the active host.
 
 ### Respondus LockDown Browser + Monitor (NATIVE custom browser) — strong on VM, weaker on overlay
