@@ -101,3 +101,8 @@ These amend earlier entries; prior entries left intact per append-only rule.
 - [2026-11-12] [T14] DECISIVE owner-only lever: DISABLE VT-x/AMD-V + VT-d in firmware (OnVUE needs no virtualization) → no HW Type-1 or GPU passthrough possible | src: slices/T14 §5 | status: recommendation
 - [2026-11-12] [T14] IF ONLY 3 THINGS: (1) firmware admin pw + disable USB/PXE boot + lock boot order + Secure Boot (kills reimage AND USB routes; test per-model UEFI boot-menu caveat); (2) disable VT-x/AMD-V+VT-d + Hyper-V/VBS in image; (3) supervised reboot into verified golden image, standard-user + app allow-listing, reset between candidates | src: slices/T14 §6 | status: recommendation
 - [2026-11-12] [T14] Every control needs machine OWNERSHIP = the central owned-vs-BYOD advantage. macOS weaker concern (Apple Silicon no VT-x; OnVUE native). Strongest primary srcs: NSA/CISA UEFI lockdown, MS BitLocker countermeasures, Qubes/Xen docs; some per-model items unverified | src: slices/T14 | status: analysis
+
+## Corrections (T15 verification of deepenings, 2026-11-12)
+- [2026-11-12] [T15] Verdict PASS-WITH-GAPS: T13+T14 faithful to briefs/T05-T06, no correctness errors; 2 minor label tightenings below | src: T15 review | status: verification
+- [2026-11-12] [T15] CLARIFY T14: "OnVUE needs no virtualization" is INFERRED from T05 §5 (OnVUE over-blocks VBS/Hyper-V), strongly supported but NOT a documented Pearson requirement — relabel assert → inferred/unverified | src: T05 §5 | status: label-downgrade
+- [2026-11-12] [T15] CLARIFY T13 Q2: the detected/blocked conclusion is sound, but VM-mechanism specifics (NIC OUI/SMBIOS) are inferred/3rd-party per T05, not confirmed internals — tag "inferred" | src: T05 §4 | status: label-downgrade
