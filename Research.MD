@@ -56,3 +56,15 @@ Entry format:
 - [2026-11-12] [T09] Each test: hypothesis, setup, control-vs-treatment method, detection signal tied to T05 behavior, explicit PASS(=detects)/FAIL(=evades), Win/macOS delta, ethics guardrails, labeled prediction | src: slices/T09 | status: design
 - [2026-11-12] [T09] Predictions: VM/display-adapter families → PASS(caught); overlay/local-LLM/pre-staging/a11y-read → FAIL(evade) — matching the T05 blind spots | src: slices/T09 | status: prediction (nothing run)
 - [2026-11-12] [T09] Execution requires user approval + practice/non-live exam + consenting testers + Pearson/sponsor coordination + ToS/legal review | src: slices/T09 | status: guardrail
+
+## Corrections (T11 re-verification — full: slices/T11-vendor-reverify/output.md)
+These amend earlier entries; prior entries left intact per append-only rule.
+- [2026-11-12] [T11] AMENDS T07/T08 "Guardian re-checks every 30s / 400+ apps": CONFIRMED periodic ~30s re-enumeration DURING exam (not launch-only) + "logs all active processes" | src: Meazure "Proctoring in Focus, Part 1" (2024-05-29) | status: vendor-asserted (no independent teardown) — relabel "continuous/proven" → "periodic ~30s, vendor-asserted"
+- [2026-11-12] [T11] 400+/500+ RESOLVED (not an error): 500+ = full app blocklist, 400+ = VM/remote-access subset (nested scopes) | src: slices/T11 | status: resolved
+- [2026-11-12] [T11] NAMING FIX: StableSight IS Rosalyn's engine (one vendor, not two) | src: slices/T11 | status: correction
+- [2026-11-12] [T11] Rosalyn/StableSight "screen-visual detection of a concealed app" = VENDOR-ASSERTED ONLY (marketing blog, no corroboration) | src: slices/T11 | status: downgrade from verified(vendor)
+- [2026-11-12] [T11] Constructor/Examus "active-window-change / lost-focus flag" = CORROBORATED (Constructor docs + Examus + EDM 2025 paper) | src: slices/T11 | status: upgrade to corroborated
+- [2026-11-12] [T11] AMENDS T07/T08 Constructor "overlay blocking": MISCHARACTERIZED — Constructor "overlays" are violation WARNINGS shown TO the examinee, not detection of a 3rd-party capture-excluded overlay. No vendor substantiates 3rd-party-overlay detection | src: slices/T11 | status: correction (weakens R4 overlay-audit leg)
+- [2026-11-12] [T11] AMENDS T06 Simko CCS2024 VM-evasion specifics (4GB/fixed-VHD/registry): source is peer-reviewed QUALITATIVE study of community-REPORTED methods (137 videos, 4297 comments); authors document but do NOT test efficacy | src: Simko et al. CCS 2024 | status: relabel → community-reported, HIGH "shared/attempted" / LOW "proven to defeat"
+- [2026-11-12] [T11] No INDEPENDENT (non-marketing) documentation of continuous host enumeration exists for ANY vendor; Guardian is most specifically documented but still vendor-asserted | src: slices/T11 | status: limitation
+- [2026-11-12] [T11] NET: Persona B recommendation SURVIVES. Process-enum leg (vendor pick) well-supported by vendor docs; overlay-audit leg (R4) must rest on general principle + re-enabled screen capture, not a single verified product | src: slices/T11 | status: conclusion

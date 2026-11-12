@@ -12,7 +12,8 @@ See Goals.MD
 - [x] T08 Persona B synthesis (rules+procedures+vendor) | check: slices/T08/output.md | evidence: 154 lines, 6 sections, 11 rules + vendor pick + roadmap, merged to Research.MD
 - [x] T09 G3 bypass-test designs for top strategies | check: slices/T09/output.md | evidence: 14 tests (12 treatment+2 control), design-only, merged to Research.MD
 - [x] T10 Final verification vs done-conditions | check: reviewer PASS | evidence: PASS-WITH-GAPS; G1-G3 + Persona A/B all PASS; 3 sourcing gaps flagged
-- [ ] T11 Re-verify load-bearing vendor claims (Guardian continuous-scan, Rosalyn/Constructor, Simko) | check: slices/T11/output.md | agent: running
+- [x] T11 Re-verify load-bearing vendor claims | check: slices/T11/output.md | evidence: Guardian ~30s re-scan CONFIRMED (vendor-asserted); overlay-detect leg corrected; Simko relabeled; corrections appended to Research.MD
+- DONE: G1-G3 met; Persona A+B answerable; verification PASS; sourcing gaps fixed. Deliverables in slices/ + Research.MD.
 
 # Findings
 - Research findings live in Research.MD, not here.
