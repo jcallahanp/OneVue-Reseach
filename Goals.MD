@@ -51,6 +51,18 @@ User-defined. Agents edit only with user approval.
   - D5 (→T18): Best approach to guardrailing HOME testing — or is in-person on locked
     machines the only path to high assurance? Honest home-vs-in-person assurance call.
 
+## Mechanism Dossiers (user-supplied 2026-11-12)
+- User wants a detailed inventory of EXACTLY how OnVUE works, and how competitor
+  tooling works (Respondus, etc.) — "reverse engineer how they work."
+- SCOPE BOUNDARY (set by orchestrator, consistent with T12): built from the PUBLIC
+  technical record only — vendor/architecture docs, patents, security-research
+  teardowns, academic analyses, privacy disclosures, observed network/telemetry.
+  NO binary reverse-engineering of the OnVUE client (Pearson ToS prohibits it;
+  legally fraught). Documented vs inferred labeled throughout.
+- D6 (→T20): OnVUE deep architecture + mechanism dossier (how it actually works).
+- D7 (→T21): Respondus (LockDown Browser + Monitor) deep mechanism dossier.
+- D8 (→T22): Other major vendors (Proctorio, ProctorU/Guardian, Honorlock, +) dossiers.
+
 ## G1 OnVUE feasibility (core question)
 Thorough inventory, far beyond typical strategies, of ANY software-only method
 to run the exam + simultaneous answer research on one machine without OnVUE
