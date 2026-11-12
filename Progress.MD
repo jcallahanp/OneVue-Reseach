@@ -15,7 +15,7 @@ See Goals.MD
 - [x] T11 Re-verify load-bearing vendor claims | check: slices/T11/output.md | evidence: Guardian ~30s re-scan CONFIRMED (vendor-asserted); overlay-detect leg corrected; Simko relabeled; corrections appended to Research.MD
 - DONE: G1-G3 met; Persona A+B answerable; verification PASS; sourcing gaps fixed. Deliverables in slices/ + Research.MD.
 - [x] T12 Test execution authorization plan (user-requested) | check: slices/T12/output.md | evidence: 10 sections, no Pearson pentest path found, Branch A/B, tiering, merged to Research.MD
-- [ ] T13 Deepen methodology #1 under center/low-compute/4h model | check: slices/T13/output.md | agent: running
+- [x] T13 Deepen methodology #1 under center/low-compute/4h model | check: slices/T13/output.md | evidence: verdict HIGH→LOW w/ hardening; compute+4h hypothesis rejected; merged to Research.MD
 - [ ] T14 Deepen Type-1 hypervisor: tools, feasibility, prevention | check: slices/T14/output.md | agent: running
 
 # Findings
